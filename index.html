@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/048d59723e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<header>
+ <div class="container">
+   <img src="images/icon-menu.svg" alt="" class="menu">
+    <a href="#" class="logo">
+        <img src="images/logo.svg" alt="">
+    </a>
+    <ul class="links">
+        <img src="images/icon-close.svg" alt="" class="close">
+        <li><a href="#collection">Collections</a></li>
+        <li><a href="#men">Men</a></li>
+        <li><a href="#women">Women</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+   <div class="shoping">
+     <img src="images/icon-cart.svg" alt="" class="shop" >
+     <span ></span>
+    </div>
+    <img src="images/image-avatar.png" alt="" class="avatar">
+ <div class="cart-info hide">
+   <h4>Cart</h4>
+   <hr/>
+   <div class="details">
+      <div class="content">
+        <img src="images/image-product-1-thumbnail.jpg" alt="">
+        <div class="product-name">
+          <p>Fall Limited Edition Sneakers</p>
+          <span>$125.00 x <span class="quantity">3</span> <span class="total">$375.00</span></span>
+        </div>
+        <img src="images/icon-delete.svg" alt="">
+      </div>
+      <button>Checkout</button>
+      <div class="no-product">
+        Your Cart Is Empty
+      </div>
+   </div>
+  </div> 
+ </div>
+ 
+</header>
+
+<main>
+  <div class="container">
+    <div class="products">
+      <div class="current-product">
+        <i class="fas fa-times close"></i>
+        <i class="fas fa-chevron-left prev"></i> 
+        <img src="images/image-product-1.jpg" alt="sneaker" >
+         <i class="fas fa-chevron-right next"></i>
+      </div>
+        <div class="other-products">
+         <div class="img-box active">
+          <img src="images/image-product-1.jpg" alt="" class="product">
+         </div>
+         <div class="img-box">
+          <img src="images/image-product-2.jpg" alt="" class="product ">
+         </div>
+         <div class="img-box">
+          <img src="images/image-product-3.jpg" alt="" class="product">
+         </div>
+         <div class="img-box">
+          <img src="images/image-product-4.jpg" alt="" class="product">
+         </div>
+  
+        </div>
+      </div>
+    <div class="info">
+      <span>Sneaker Company</span>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p>
+        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+       <div class="price">
+        <B>$125.00</B>
+        <del>$250.00</del>
+      </div>
+      <div class="items-to-buy">
+      <div class="wrapper">
+          <button id="minus"><img src="images/icon-minus.svg" alt="" ></button>
+          <div class="number-items">0</div>
+          <button id="plus"><img src="images/icon-plus.svg" alt=""></button>
+        </div> 
+        <button id="btn-add">
+         <img src="images/icon-cart.svg" alt=""> Add to cart
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+<div class="big-overlay hide">
+
+</div>
+  <script src="js/master.js"></script>
+</body>
+</html>
